@@ -10,14 +10,14 @@ export default function page() {
     {/* Backgrounds */}
     <div className="background background-image" />
 
-    <div className="background" style={{top:"500px", maxHeight:"600px", overflow:"hidden", transform: "scale(2) translate(0, 20%)"}}>
+    <div className="background" style={{top:"500px", filter:"drop-shadow(0px -5px 5px #0003)", maxHeight:"600px", overflow:"hidden", transform: "scale(2) translate(0, 20%)"}}>
         <svg viewBox="0 0 100 100">
           <polygon points="50,0 100,5 100,75 0,75 0,5" fill="#785b8e" stroke="#000000" strokeWidth="0" opacity="1" />
         </svg>
     </div>
 
 
-    <div className="background" style={{top:"1400px", maxHeight:"400px", overflow:"hidden", transform: "scale(2) translate(0, 20%)"}}>
+    <div className="background" style={{top:"1400px", filter:"drop-shadow(0px -20px 5px #0003)", maxHeight:"400px", overflow:"hidden", transform: "scale(2) translate(0, 20%)"}}>
         <svg viewBox="0 0 100 100">
           <polygon points="50,0 100,5 100,55 0,55 0,5" fill="#d0c8c1" stroke="#000000" strokeWidth="0" opacity="1" />
         </svg>
@@ -55,7 +55,7 @@ export default function page() {
             </div>
 
             <div className="content">
-            <h2>A New Way to Play</h2>
+            <h2 id="about">A New Way to Play</h2>
               <p>
                 <b>The Elderwilds SMP</b> is a cozy, creator-led server built for community connection and that nostalgic Minecraft feeling. Creators join with their communities, all gathering in one shared world hosted and cared for by a dedicated team.
                 <br /><br />

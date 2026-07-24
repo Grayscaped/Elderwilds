@@ -40,11 +40,11 @@ const [visible, setVisible] = useState(false);
 
         <nav>
             <ul>
-                <li><a href=".sec01">About</a></li>
-                <li><a href=".sec03">Donate</a></li>
-                <li><a href=".sec03">Creators</a></li>
-                <li><a href=".sec02">Events</a></li>
-                <li><a href=".sec04">Fanart</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#creators">Creators</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#fanart">Fanart</a></li>
+                <li><a href="#donate">Donate</a></li>
             </ul>
         </nav>
       </header>
