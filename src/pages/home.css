@@ -23,6 +23,8 @@ body {
 
 .background-image {
     background: url("/sakura-field-minecraft-thumb.jpg") no-repeat top center fixed;
+    filter: blur(5px);
+    transform: scale(1.1);
 }
 
 .center {
@@ -39,23 +41,13 @@ body {
 }
 
 
-.discord {
-    width:300px;
-    height:50px;
-    text-align: center;
-    align-content: center;
-    border: 2px solid #785b8e;
-    border-top-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    background-color: #cdb2e2;
-    color: #785b8e;
-    font-size: 1em;
-}
-
 .margin-bottom {
     margin-bottom: 100px;
 }
 
+.margin-top {
+    margin-top: 100px;
+}
 
 .card {
     display: flex;
@@ -81,6 +73,15 @@ body {
 }
 
 .image {
-
   width: 70%;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

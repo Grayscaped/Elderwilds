@@ -1,0 +1,31 @@
+.discord {
+    width:300px;
+    height:50px;
+    text-align: center;
+    align-content: center;
+    border: 5px solid #785b8e;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #cdb2e2;
+    color: #785b8e;
+    font-size: 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+a:active {
+      text-decoration: none;
+}
