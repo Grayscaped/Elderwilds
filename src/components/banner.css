@@ -10,12 +10,10 @@
 
     align-items: center;
 
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     transition: transform 0.35s ease;
     z-index: 1000;
     padding: 0 10px;
-
-
 }
 
 .header::before {
@@ -26,6 +24,8 @@
     background: url("/header.png") center/cover no-repeat;
   image-rendering: pixelated;
   z-index: -1;
+pointer-events: none;
+filter: drop-shadow(5px 5px 0 #0002) drop-shadow(-5px -5px 0 #0002);
 }
 
 .header.show {
@@ -34,6 +34,7 @@
 
 
 nav ul {
+    text-shadow: -1px -1px 0 #8c4969, 1px -1px 0 #8c4969, -1px 1px 0 #8c4969, 1px 1px 0 #8c4969;
     display: flex;
     list-style: none;
     margin: 0;

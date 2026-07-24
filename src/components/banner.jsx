@@ -1,10 +1,11 @@
 import "./banner.css";
+import Discord from "../components/discord.jsx";
 import { useEffect, useRef, useState } from "react";
 
 export default function component() {
 const [visible, setVisible] = useState(false);
   const lastScrollY = useRef(0);
-    const scrollAmount = 500;
+    const scrollAmount = 700;
 
 
   useEffect(() => {
@@ -30,9 +31,12 @@ const [visible, setVisible] = useState(false);
   }, []);
 
   return (
-      <header className={`header ${visible ? "show" : ""}`}>
-        <h1>Elderwilds</h1>
-
+      <header className={`skranji-bold header ${visible ? "show" : ""}`}>
+        {/*<h1>Elderwilds</h1>*/}
+        <div style={{display:"flex", alignItems:"center", gap:"40px"}}>
+            <img src="./minecraft_title7.png" style={{width:"12em", marginTop:"1em"}}/>
+            <Discord style={{width:"150px"}} />
+        </div>
 
         <nav>
             <ul>

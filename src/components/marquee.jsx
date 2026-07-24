@@ -1,9 +1,9 @@
 import "./marquee.css";
 
-export default function component({ children, speed = 20 }) {
+export default function component({ children, style, speed = 20 }) {
 
   return (
-    <div className="marquee-container">
+    <div className="marquee-container" style={style}>
       <div
         className="marquee-track"
         style={{ animationDuration: `${speed}s` }}
