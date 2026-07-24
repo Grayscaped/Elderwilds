@@ -1,0 +1,35 @@
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: marquee linear infinite;
+}
+
+.marquee-track span {
+  padding-right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
