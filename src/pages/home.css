@@ -1,0 +1,50 @@
+body {
+    background-color: #785b8e;
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: 4em;
+}
+
+.subtitle {
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -10;
+}
+
+.background-image {
+    background: url("2026-07-10_17.37.57.png") no-repeat top center fixed;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.debug {
+
+  background: #111;
+  color: white;
+}
+
+
+.discord {
+    width:300px;
+    height:100px;
+    text-align: center;
+  align-content: center;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}

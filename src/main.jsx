@@ -1,11 +1,11 @@
+// Global css
+import './style.css'
 
 import {StrictMode} from "react";
 import ReactDOM from "react-dom/client";
 import {createRoot} from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-// Global css
-//import './style.css'
 
 import Home from "./pages/home.jsx"
 import NotFound from "./pages/notfound.jsx"
