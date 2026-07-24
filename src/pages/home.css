@@ -2,6 +2,7 @@ body {
     background-color: #d0c8c1;
 }
 
+
 .title {
     margin-bottom: 0;
     font-size: 4em;
@@ -58,11 +59,19 @@ body {
 
 .card {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
     border-radius: 8px;
     justify-content: center;
+
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card .content {
+    width: 50%;
 }
 
 .image img {
@@ -73,5 +82,5 @@ body {
 
 .image {
 
-  width: 30%;
+  width: 70%;
 }

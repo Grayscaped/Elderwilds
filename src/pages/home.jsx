@@ -34,22 +34,23 @@ export default function page() {
         <div className="discord impact" style={{fontSize:"1.5em"}}>Join!</div>
     </section>
 
-    <section className="center margin-bottom">
+    <section className="center" style={{marginBottom: "138px"}}>
         <Youtube src="https://www.youtube.com/embed/K0BWedP-jjY?autoplay=1&loop=1&controls=0&rel=0"></Youtube>
     </section>
 
-    <section>
+    <section className="center" style={{color:"#6e5084"}}>
 
-        <div className="card">
+        <div className="card"  style={{maxWidth:"80%"}}>
         <div className="image">
-          <img src="https://via.placeholder.com/250" alt="Sample Image" />
+          <img src="/2026-06-24_22.21.08.png" alt="Sample Image" />
         </div>
 
         <div className="content">
-          <h2>Title Here</h2>
+          <h2>A New Way to Play</h2>
           <p>
-            This is the description. You can add any text here. The image appears
-            on the left while the title and description are displayed on the right.
+            <b>The Elderwilds SMP</b> is a cozy, creator-led server built for community connection and that nostalgic Minecraft feeling. Creators join with their communities, all gathering in one shared world hosted and cared for by a dedicated team.
+<br /><br />
+It's a lively, fun, inclusive space where creators and players who've always wanted an SMP can finally settle in, meet new people, and make something wonderful together.
           </p>
         </div>
         </div>
