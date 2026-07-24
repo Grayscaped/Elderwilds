@@ -1,21 +1,31 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
 
-  display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
-  align-items: center;
+    align-items: center;
 
-  transform: translateY(-100%);
-  transition: transform 0.35s ease;
-  z-index: 1000;
-  padding: 0 10px;
-    background: #ffffff33;
-border-bottom: thick double #ffffff77;
+    transform: translateY(-100%);
+    transition: transform 0.35s ease;
+    z-index: 1000;
+    padding: 0 10px;
+
+
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -500px 0;
+
+    background: url("/header.png") center/cover no-repeat;
+  image-rendering: pixelated;
+  z-index: -1;
 }
 
 .header.show {
@@ -37,5 +47,5 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15px;color: white;
 }

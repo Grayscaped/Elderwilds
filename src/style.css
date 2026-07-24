@@ -15,6 +15,18 @@ body {
   font-style: normal;
 }
 
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.impact {
+  font-family: Impact, system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 section {
     margin: 0 20px;
 }
