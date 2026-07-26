@@ -4,6 +4,8 @@ import Youtube from "../components/youtube.jsx";
 import Marquee from "../components/marquee.jsx";
 import Discord from "../components/discord.jsx";
 
+import CharacterCard from "../components/characterCard.jsx";
+
 export default function page() {
   return (<>
 
@@ -48,8 +50,8 @@ export default function page() {
 
 
 
-    <section className="center fade-in" style={{color:"#6e5084"}}>
-        <div className="card"  style={{maxWidth:"80%", boxShadow: "0 0 0 10px #fff6"}}>
+    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px"}}>
+        <div className="intro"  style={{maxWidth:"80%", boxShadow: "0 0 0 10px #fff6"}}>
             <div className="image">
                 <img src="/2026-06-24_22.21.08.png" alt="Sample Image" />
             </div>
@@ -62,6 +64,20 @@ export default function page() {
                 It's a lively, fun, inclusive space where creators and players who've always wanted an SMP can finally settle in, meet new people, and make something wonderful together.
               </p>
             </div>
+        </div>
+    </section>
+
+    <section className="center fade-in" style={{marginBottom:"50px"}}>
+        <h1>Meet our creators!</h1>
+    </section>
+
+    <section className="center fade-in" style={{color:"#6e5084"}}>
+        <div className="card"  style={{boxShadow: "0 0 0 10px #fff6", flexDirection: "row", width:"80%", display: "flex", justifyContent:"center", borderRadius: "8px"}}>
+            <CharacterCard social="https://twitch.tv/grayscaped" username="grayscaped" job="Owner" quote="That wasnt meant to happen-" style={{transform:"rotate(-10deg)"}}/>
+            <CharacterCard social="https://twitch.tv/appitylive" username="appity" job="Omen Empire Leader" quote="Glory to the Omen Empire!" style={{transform:"rotate(-3deg) translate(0, -30px)"}} />
+            <CharacterCard social="https://twitch.tv/clay_moth" username="clay_moth" job="Skewer Town Leader" quote="The skewers unite, and thrive in a food fight" style={{transform:"translate(0, -40px)"}} />
+            <CharacterCard social="https://twitch.tv/highkeyhaiken" username="haiken" job="Princess of Eudaimonia" quote="CARAMBA, ESSAS LESBICAS" style={{transform:"rotate(3deg) translate(0, -30px)"}} />
+            <CharacterCard social="https://twitch.tv/vertrium" username="vertrium" job="Kingdom Knight" quote="I may be small, but my heart and love for friends is huge!" style={{transform:"rotate(10deg)"}}/>
         </div>
     </section>
 

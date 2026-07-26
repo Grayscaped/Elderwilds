@@ -1,0 +1,98 @@
+
+.cardCharacter {
+  width: 360px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #785b8e;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+  transition: .4s;
+}
+
+.cardCharacter-bg {
+  min-height: 170px;
+  /*background-image: url("/2026-07-10_21.52.26.png");*/
+  background-size: cover;
+  background-position: center;
+}
+
+.cardCharacter .character {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  transition: .4s;
+}
+
+.cardCharacter:hover .character {
+  transform: translateY(-20px) scale(1.25);
+}
+
+.cardCharacter .profile-circle {
+    box-shadow: 0px 0px 52px 12px rgba(45,255,196,1);
+}
+
+.cardCharacter .content {
+  padding: 25px;
+  text-align: center;
+}
+
+.cardCharacter .content h2 {
+  color: white;
+  text-shadow: -2px -2px 0 #8c4969, 2px -2px 0 #8c4969, -2px 2px 0 #8c4969, 2px 2px 0 #8c4969;
+  margin-top: 10px;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.cardCharacter .job {
+  color: #40314c;
+  display: block;
+  margin: 0 0;
+  font-weight: 600;
+}
+
+.cardCharacter .quote {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.cardCharacter .socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.cardCharacter .socials a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #334155;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: .3s;
+}
+
+.cardCharacter .socials a:hover {
+  background: #38bdf8;
+  transform: translateY(-5px);
+}
+
+
+.character-image {
+    position: absolute;
+    transform: translate(0, -190px);
+    max-height: 1px;
+    width: 100%;
+    overflow: visible;
+    z-index: -10;
+}
+
+
+.glow {
+    filter: drop-shadow(0px -10px 9px white)
+}

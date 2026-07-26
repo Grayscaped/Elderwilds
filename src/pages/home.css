@@ -49,7 +49,7 @@ body {
     margin-top: 100px;
 }
 
-.card {
+.intro {
     display: flex;
     gap: 40px;
     padding: 20px;
@@ -58,11 +58,11 @@ body {
 
 }
 
-.card h2 {
+.intro h2 {
     text-align: center;
 }
 
-.card .content {
+.intro .content {
     width: 50%;
 }
 
