@@ -1,7 +1,7 @@
 import "./characterCard.css";
 import { useId } from "react";
 
-export default function component({username, job="unknown", quote, social, background="/2026-07-10_21.52.26.png", style}) {
+export default function component({username, job="unknown", quote, social, background="/2026-07-10_21.52.26.png", style, characterStyle}) {
     const maskId = useId();
   return (
     <a href={social}>
@@ -18,7 +18,7 @@ export default function component({username, job="unknown", quote, social, backg
                 </svg>
             </div>
             <div className="character-image glow">
-                <svg viewBox="0 0 200 200" style={{ height:"100%", width:"100%", overflow:"visible", zIndex:"-10"}}>
+                <svg viewBox="0 0 200 200" style={{ height:"100%", width:"100%", overflow:"visible", zIndex:"-10", ...characterStyle}}>
                     <mask id={maskId}>
                         <rect width="200" height="200" x="0" y="-65" fill="#ffffff"/>
                         <ellipse rx="80" ry="40" cx="100" cy="120" fill="#ffffff"/>

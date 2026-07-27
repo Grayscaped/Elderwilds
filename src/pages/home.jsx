@@ -80,7 +80,7 @@ export default function page() {
             <CharacterCard social="https://twitch.tv/grayscaped" username="grayscaped" job="Owner" quote="That wasnt meant to happen-" style={{transform:"rotate(-10deg)"}}/>
             <CharacterCard social="https://twitch.tv/appitylive" username="appity" job="Omen Empire Leader" quote="Glory to the Omen Empire!" style={{transform:"rotate(-3deg) translate(0, -30px)"}} />
             <CharacterCard social="https://twitch.tv/clay_moth" username="clay_moth" job="Skewer Town Leader" quote="The skewers unite, and thrive in a food fight" style={{transform:"translate(0, -40px)"}} />
-            <CharacterCard social="https://twitch.tv/highkeyhaiken" username="haiken" job="Princess of Eudaimonia" quote="CARAMBA, ESSAS LESBICAS" style={{transform:"rotate(3deg) translate(0, -30px)"}} />
+            <CharacterCard social="https://twitch.tv/highkeyhaiken" username="haiken" job="Princess of Eudaimonia" quote="CARAMBA, ESSAS LESBICAS" style={{transform:"rotate(3deg) translate(0, -30px)"}} characterStyle={{transform:"scale(0.6) translate(0, 60px)"}}/>
             <CharacterCard social="https://twitch.tv/vertrium" username="vertrium" job="Kingdom Knight" quote="I may be small, but my heart and love for friends is huge!" style={{transform:"rotate(10deg)"}}/>
         </div>
     </section>
