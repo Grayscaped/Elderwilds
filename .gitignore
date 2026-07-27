@@ -26,3 +26,4 @@ dist-ssr
 /skin_grabber/skins
 /skin_grabber/__pycache__
 skin_grabber/playerlist.txt
+skin_grabber/atlas.png

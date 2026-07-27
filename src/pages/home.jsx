@@ -5,8 +5,11 @@ import Marquee from "../components/marquee.jsx";
 import Discord from "../components/discord.jsx";
 
 import CharacterCard from "../components/characterCard.jsx";
+import atlas from "../components/atlas.json";
 
 export default function page() {
+    const atlasSize = {width: 8426, height: 7824};
+    const atlasScale = 3/25;
   return (<>
 
     {/* Backgrounds */}
@@ -71,13 +74,39 @@ export default function page() {
         <h1>Meet our creators!</h1>
     </section>
 
-    <section className="center fade-in" style={{color:"#6e5084"}}>
+    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px"}}>
         <div className="card"  style={{boxShadow: "0 0 0 10px #fff6", flexDirection: "row", width:"80%", display: "flex", justifyContent:"center", borderRadius: "8px"}}>
             <CharacterCard social="https://twitch.tv/grayscaped" username="grayscaped" job="Owner" quote="That wasnt meant to happen-" style={{transform:"rotate(-10deg)"}}/>
             <CharacterCard social="https://twitch.tv/appitylive" username="appity" job="Omen Empire Leader" quote="Glory to the Omen Empire!" style={{transform:"rotate(-3deg) translate(0, -30px)"}} />
             <CharacterCard social="https://twitch.tv/clay_moth" username="clay_moth" job="Skewer Town Leader" quote="The skewers unite, and thrive in a food fight" style={{transform:"translate(0, -40px)"}} />
             <CharacterCard social="https://twitch.tv/highkeyhaiken" username="haiken" job="Princess of Eudaimonia" quote="CARAMBA, ESSAS LESBICAS" style={{transform:"rotate(3deg) translate(0, -30px)"}} />
             <CharacterCard social="https://twitch.tv/vertrium" username="vertrium" job="Kingdom Knight" quote="I may be small, but my heart and love for friends is huge!" style={{transform:"rotate(10deg)"}}/>
+        </div>
+    </section>
+
+    <section className="center fade-in" style={{marginBottom:"50px"}}>
+        <h1>And our players!</h1>
+    </section>
+
+    <section className="center fade-in" style={{color:"#6e5084"}}>
+
+        <div className="card"  style={{boxShadow: "0 0 0 10px #fff6", flexDirection: "row", width:"80%", display: "flex", justifyContent:"center", borderRadius: "8px"}}>
+        <div class="collage">
+        {Object.entries(atlas).map(([name, data]) => (
+            <div
+              key={name}
+              className="image"
+              style={{
+                width: `${data.width * atlasScale}px`,
+                height: `${data.height * atlasScale}px`,
+                backgroundImage: `url(/atlas.png)`,
+                backgroundPosition: `-${data.x * atlasScale}px -${data.y * atlasScale}px`,
+                backgroundSize: `${atlasSize.width * atlasScale}px ${atlasSize.height * atlasScale}px`
+              }}
+              title={name}
+            />
+        ))}
+        </div>
         </div>
     </section>
 

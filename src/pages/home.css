@@ -85,3 +85,30 @@ body {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
+
+.collage {
+    width: 100%;
+    padding: 20px 40px 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.1%;
+    justify-items:center;
+}
+
+.collage .image {
+    width: 120px;
+    height: 120px;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+    transition: .4s ease;
+}
+
+.collage .image:hover{
+    transform: scale(1.1) rotate(5deg);
+    border-color: #785b8e;
+    box-shadow: 0 15px 35px #785b8e99;
+}
