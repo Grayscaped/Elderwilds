@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/skin_grabber/images
+/skin_grabber/skins
+/skin_grabber/__pycache__
+skin_grabber/playerlist.txt
