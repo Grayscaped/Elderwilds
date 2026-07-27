@@ -92,7 +92,7 @@ body {
     width: 100%;
     padding: 20px 40px 40px 40px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 0.1%;
     justify-items:center;
 }
