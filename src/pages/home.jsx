@@ -30,6 +30,13 @@ export default function page() {
           <polygon points="50,0 100,5 100,55 0,55 0,5" fill="#d0c8c1" stroke="#000000" strokeWidth="0" opacity="1" />
         </svg>
     </div>
+
+
+    <div className="background" style={{top:"4300px", filter:"drop-shadow(0px -20px 5px #0003)", maxHeight:"400px", overflow:"hidden", transform: "scale(2) translate(0, 20%)"}}>
+        <svg viewBox="0 0 100 100">
+          <polygon points="50,0 100,5 100,55 0,55 0,5" fill="#785b8e" stroke="#000000" strokeWidth="0" opacity="1" />
+        </svg>
+    </div>
 {/*
     <div className="background" style={{top:"1400px", filter:"drop-shadow(0px -20px 5px #0003)", maxHeight:"400px", overflow:"hidden" }}>
         <svg viewBox="0 0 200 200">
@@ -93,7 +100,7 @@ export default function page() {
 
     </section>
 
-    <section className="center fade-in" style={{color:"#6e5084"}}>
+    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px"}}>
 
         <div className="card"  style={{boxShadow: "0 0 0 10px #fff6", flexDirection: "row", width:"80%", display: "flex", justifyContent:"center", borderRadius: "8px"}}>
         <div class="collage">
@@ -106,7 +113,9 @@ export default function page() {
                 height: `${data.height * atlasScale}px`,
                 backgroundImage: `url(/atlas.png)`,
                 backgroundPosition: `-${data.x * atlasScale}px -${data.y * atlasScale}px`,
-                backgroundSize: `${atlasSize.width * atlasScale}px ${atlasSize.height * atlasScale}px`
+                backgroundSize: `${atlasSize.width * atlasScale}px ${atlasSize.height * atlasScale}px`,
+                border: supporters.includes(name) ? "9px solid gold" : "6px solid #fff",
+                boxShadow: supporters.includes(name) ? "0 0 30px gold" : "0 10px 25px rgba(0,0,0,.4)"
               }}
               title={name}
             />
@@ -117,6 +126,12 @@ export default function page() {
 
     {/*Repeat that^ X times*/}
 
+    <section className="center fade-in">
+        <h1 id="events">Events</h1>
+        <div className="card"  style={{boxShadow: "0 0 0 10px #fff6", flexDirection: "row", width:"80%", display: "flex", justifyContent:"center", borderRadius: "8px"}}>
+        <EventTimeline events={timelineEvents} style={{width: "100%"}} />
+        </div>
+    </section>
 
 
     {/*Footer*/}
