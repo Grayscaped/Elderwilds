@@ -6,7 +6,9 @@ import Discord from "../components/discord.jsx";
 import CharacterCard from "../components/characterCard.jsx";
 import EventTimeline from "../components/eventTimeline.jsx";
 
-import atlas from "../components/atlas.json";
+import atlas from "../data/atlas.json";
+import timelineEvents from "../data/events.json"
+import supporters from "../data/supporters.json"
 
 export default function page() {
     const atlasSize = {width: 2126, height: 1974};
@@ -87,6 +89,8 @@ export default function page() {
 
     <section className="center fade-in" style={{marginBottom:"50px"}}>
         <h1>And our players!</h1>
+        <small style={{color:"gold"}}><b>& supporters</b></small>
+
     </section>
 
     <section className="center fade-in" style={{color:"#6e5084"}}>
