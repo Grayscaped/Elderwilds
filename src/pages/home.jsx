@@ -3,13 +3,14 @@ import "./home.css";
 import Youtube from "../components/youtube.jsx";
 import Marquee from "../components/marquee.jsx";
 import Discord from "../components/discord.jsx";
-
 import CharacterCard from "../components/characterCard.jsx";
+import EventTimeline from "../components/eventTimeline.jsx";
+
 import atlas from "../components/atlas.json";
 
 export default function page() {
-    const atlasSize = {width: 8426, height: 7824};
-    const atlasScale = 3/25;
+    const atlasSize = {width: 2126, height: 1974};
+    const atlasScale = 12/25;
   return (<>
 
     {/* Backgrounds */}
@@ -53,7 +54,7 @@ export default function page() {
 
 
 
-    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px"}}>
+    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px", height:"570px"}}>
         <div className="intro"  style={{maxWidth:"80%", boxShadow: "0 0 0 10px #fff6"}}>
             <div className="image">
                 <img src="/2026-06-24_22.21.08.png" alt="Sample Image" />
@@ -71,10 +72,10 @@ export default function page() {
     </section>
 
     <section className="center fade-in" style={{marginBottom:"50px"}}>
-        <h1>Meet our creators!</h1>
+        <h1 id="creators">Meet our creators!</h1>
     </section>
 
-    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px"}}>
+    <section className="center fade-in" style={{color:"#6e5084", marginBottom:"50px", height:"420px"}}>
         <div className="card"  style={{boxShadow: "0 0 0 10px #fff6", flexDirection: "row", width:"80%", display: "flex", justifyContent:"center", borderRadius: "8px"}}>
             <CharacterCard social="https://twitch.tv/grayscaped" username="grayscaped" job="Owner" quote="That wasnt meant to happen-" style={{transform:"rotate(-10deg)"}}/>
             <CharacterCard social="https://twitch.tv/appitylive" username="appity" job="Omen Empire Leader" quote="Glory to the Omen Empire!" style={{transform:"rotate(-3deg) translate(0, -30px)"}} />
